@@ -1,0 +1,47 @@
+
+body {
+
+    background-color: rgb(73, 63, 94);
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+hr {
+    /*border-color: white;*/
+    border-style:none;
+    border-top-style:none;
+}
+img{
+    height:200px;
+    width:200px;
+}
+h1{
+    color: rgb(15, 59, 15);
+    font-style: bold;
+}
+h3{
+    color: whitesmoke;
+    font-size: 40px;
+}
+
+p1{
+    color:whitesmoke;
+}
+
+a{
+    width:40px;
+    height:40px;
+    color:black;
+}
+h1{
+    color:white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    border-style: inset;
+    border: 2px;
+    border-color: black;
+
+}
+h2{
+    color:azure;
+}
