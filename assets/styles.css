@@ -83,11 +83,11 @@ h2{
 
 .profile{
     display: inline-block;
-    height:300px;
-    width:300px;
+    height:280px;
+    width:280px;
     position: absolute;
-    right:12%;
-    top:15%;
+    right:14%;
+    top:18%;
 }
 .logos{
     position:absolute;
