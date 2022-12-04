@@ -1,7 +1,7 @@
 
 body {
-
-    background-color: rgb(73, 63, 94);
+    margin:0;
+    background-color: rgb(196, 196, 196);
     color: white;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
@@ -11,17 +11,16 @@ hr {
     border-style:none;
     border-top-style:none;
 }
-img{
+/*img{
     height:200px;
     width:200px;
-}
-h1{
-    color: rgb(15, 59, 15);
-    font-style: bold;
-}
+}*/
 h3{
     color: whitesmoke;
     font-size: 40px;
+}
+h3:hover{
+    color:black;
 }
 
 p1{
@@ -36,12 +35,81 @@ a{
 h1{
     color:white;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 60px;
+    font-size: 80px;
     border-style: inset;
     border: 2px;
     border-color: black;
-
 }
+
 h2{
     color:azure;
+}
+/*class selectors*/
+.mylogo{
+    width:50px;
+    height:50px;
+    position:absolute;
+    left:25px;
+    top:25px;
+}
+.extra{
+    font-size:25px;
+}
+.lastname{
+    
+}
+.nameheader{
+    font-size: 100px;
+    
+}
+.main{
+    display: inline-block;
+    position: absolute;
+    left:10%;
+    top:10%;
+    
+    
+}
+.frontcontainer{
+    width:100%;
+    height:100%;
+    
+    background-image:url("334704.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    
+}
+
+.profile{
+    display: inline-block;
+    height:300px;
+    width:300px;
+    position: absolute;
+    right:12%;
+    top:15%;
+}
+.logos{
+    position:absolute;
+    bottom:4%;
+    left:38%;
+
+}
+.links{
+    height:25 ;
+    width:25;
+    display:inline-block;
+    padding-left:30px;
+}
+.bold{
+    font-style:bold;
+}
+
+/* id selsctors*/
+
+#noob{
+    color:rgb(70, 16, 16);
+}
+#noob:hover{
+    color:black;
 }
