@@ -2,6 +2,10 @@
     font-family:"quentin";
     src:url(assets/Quentin.otf)
 }
+*{
+    margin: 0;
+    padding:0;
+}
 
 
 body { 
@@ -156,5 +160,49 @@ nav{
     .bg-vid{
         width:auto;
         height: 100%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .name{
+        font-size: 5rem;
+    }
+    .nameheader{
+        font-size: 6rem;
+    }
+    .bg-vid{
+        width: cover;
+        height: cover;
+    }
+    .main{
+        padding-left: 5%;
+        padding-right: 5%;
+        top:1%;
+    }
+    body{
+        width:100%
+    }
+    .mylogo{
+        width:60px;
+        height:60px;   
+    }
+    .links{
+        height:20;
+        width:20;
+        padding-left:20px;
+        padding-top: 2%;
+    }
+    .lastname{
+        padding-left: 20%;
+    }
+    
+    .cc-reference {
+        float: none;
+        display: block; /* making it block level allows you to... */
+        margin: -8px auto 0; /* center automatically */
+    }
+    html,body{
+        max-width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
 }
