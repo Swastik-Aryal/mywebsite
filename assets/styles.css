@@ -1,5 +1,5 @@
 @font-face{
-    font-family:"quentin";
+    font-family:"quentin2";
     src:url(assets/Quentin.otf)
 }
 *{
@@ -102,7 +102,7 @@ nav{
     
 }
 .name{
-    font-family:'quentin', serif;
+    font-family:'Quentin', 'quentin2','Arizonia', cursive;
     font-size: 7rem;
 }
 .lastname{
