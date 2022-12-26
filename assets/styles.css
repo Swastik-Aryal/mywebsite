@@ -43,10 +43,7 @@ h1{
 
 
 
-nav{
-    display: block;
-    overflow-y: scroll;
-}
+
 
 /*class selectors*/
 
@@ -196,8 +193,6 @@ nav{
     }
     html,body{
         max-width: 100%;
-        overflow-x: hidden;
-        overflow-y: hidden;
     }
 }
 
@@ -218,7 +213,7 @@ nav{
 	width: 550px;
 }
 .main2{
-	width: 1130px;
+	width:90%;
 	max-width: 95%;
 	margin: 0 auto;
 	display: flex;
@@ -261,7 +256,7 @@ button:hover{
 	cursor: pointer;
 }
 .connect{
-    display: block;
+    display: inline-block;
     position: relative;
     width: 100%;
 	margin-top:8rem;
@@ -269,11 +264,12 @@ button:hover{
     
 }
 .container{
-    width: 1130px;
-	max-width: 95%;
+    width: 90%;
+	max-width: 80%;
 	margin: 0 auto;
 	display: flex;
-	align-items: center;
+    align-items: center;
+	
 	justify-content: space-around;
 
 }
@@ -291,11 +287,11 @@ button:hover{
 }
 .message{
     padding-top: 70px;
-    padding-left:70px;
+    margin-left:13%;
     display: inline-block;
     padding-bottom: 70px;
-    position: relative;
-    right:25%;
+    /* position: relative;
+    right:25%; */
 
 
 }
@@ -361,11 +357,12 @@ input[type=text] {
     line-height: 70px;
     border: white;
     display: inline-block;
-    position: absolute;
+    /* position: absolute;
     right:5%;
-    bottom:40%;
-    margin-left: 13%;
-    margin-top: 14rem;
+    bottom:40%; */
+    margin-right: 13%;
+    margin-bottom: 6%;
+    margin-left: 5%;
   }
   .enquiry span{
     color:azure;
