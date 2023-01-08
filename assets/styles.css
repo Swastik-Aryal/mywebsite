@@ -587,6 +587,155 @@ p2{
 
 
 }
+@media(max-width:355px){
+    .bg-vid{
+        width:auto;
+        height: 100%;
+    }
+    .frontcontainer{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content:left;
+        align-items: center
+        ;
+    }
+    nav{
+        
+        display: block;
+    }
+
+    .logos{
+        display: none;
+    }
+    .mylogo{
+        position: absolute;
+        
+        top:5px;
+        left:200%;
+        
+        
+        width:60px;
+        height:60px;
+    }
+    .main{
+        display: block;
+        
+        
+        text-align: center;
+        max-width: 90%;
+        position: absolute;
+        
+        top:25%;
+        right: 31%;
+        padding-right: 0;
+        padding-left: 5%;
+
+    }
+    .name{
+        color:whitesmoke;
+        font-size: 70px;
+        
+        
+    }
+    .nameheader{
+        font-size: 10rem;
+    }
+    .lastname{
+        padding-left: 30%;
+        padding-top: 10%;
+    }
+    .logos-mobile{
+        display: block;
+        position: absolute;
+        bottom: 5%;
+        
+        text-align: center;
+        justify-content:space-between;   
+    }
+    .links{
+        height:25;
+        width:25;
+        display:inline-block;
+        padding-left: 0;
+        
+        
+    }
+
+    .about{
+        padding: 60px 0 ;
+    }
+    .about img{
+        width:270px;
+        height: auto;
+    }
+    .main2{
+        flex-direction: column;
+    }
+    .about-text{
+        max-width: 80%;
+          
+    }
+    .about-text h2{
+        font-size:2.6em;
+        padding-top: 20px;
+    }
+    .about-text p{
+        text-align: left;
+    }
+    .container{
+        flex-direction: column;
+        max-width: 85%;
+        align-items: center;
+        
+        text-align:center;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        
+    }
+    textarea{
+        width: 90%;
+    }
+    .enquiry{
+        width: 90%;
+        margin-left: 5px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        line-height: 40px;
+        
+    }
+    
+    .message{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .connect h2{
+        font-size:2.6em ;
+    }
+    .about-text h5{
+        font-size:1.3em;
+    }
+    h3{
+        font-size: 1.5em;
+
+    }
+    .enquiry span{
+        font-size: 1.3em;
+
+    }
+    .enmail{
+        font-size: 0.8em;
+
+    }
+    .foot{
+        font-size: 0.7em;
+    }
+
+
+}
 .space{
     padding-left:40px;
 }
