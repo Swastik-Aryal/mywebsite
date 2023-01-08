@@ -1,5 +1,5 @@
 @font-face{
-    font-family:"quentin2";
+    font-family:"quentin";
     src:url(assets/Quentin.otf)
 }
 *{
@@ -12,6 +12,7 @@ body {
     margin:0;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: block;
+    position: relative;
 }
 hr {
     /*border-color: white;*/
@@ -51,23 +52,33 @@ h1{
 .bg-vid{
     position: fixed;
     display: flex;
+    z-index: -1;
+    
+
 
 }
 
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    top:6%;
+    padding-left: 7%;
+    padding-right: 7%;
     
+
+}    
 .mylogo{
     width:80px;
     height:80px;
-    position: absolute;
-    left:7%;
-    top:10%;
-    
+    padding-top: 1rem;    
 }
 
 .logos{
-    position:absolute;
-    right:7%;
-    top:12%;
+    padding-right: 3rem;
+
+    
 }
 .links{
     height:25;
@@ -89,11 +100,11 @@ h1{
 
 
 .nameheader{
-    font-size: 8rem;
-    
+    font-size: 8rem;   
 }
+
 .name{
-    font-family:'Quentin', 'quentin2','Arizonia', cursive;
+    font-family:'quentin','Arizonia', cursive;
     font-size: 7rem;
 }
 .lastname{
@@ -103,8 +114,10 @@ h1{
     display: inline-block;
     text-align: center;
     position: relative;
-    top:27%;
+    top:14%;
     right:5%;
+    padding-left: 2%;
+    padding-right: 2%;
     
 }
 .frontcontainer{
@@ -141,60 +154,9 @@ h1{
 }
 
 
-@media (min-aspect-ratio:16/9){
-    .bg-vid{
-        width:100%;
-        height: auto;
-    }
-}
-@media (max-aspect-ratio:16/9){
-    .bg-vid{
-        width:auto;
-        height: 100%;
-    }
-}
-@media only screen and (max-width: 600px){
-    .name{
-        font-size: 5rem;
-    }
-    .nameheader{
-        font-size: 6rem;
-    }
-    .bg-vid{
-        width: cover;
-        height: cover;
-    }
-    .main{
-        padding-left: 5%;
-        padding-right: 5%;
-        top:1%;
-    }
-    body{
-        width:100%
-    }
-    .mylogo{
-        width:60px;
-        height:60px;   
-    }
-    .links{
-        height:20;
-        width:20;
-        padding-left:20px;
-        padding-top: 2%;
-    }
-    .lastname{
-        padding-left: 20%;
-    }
-    
-    .cc-reference {
-        float: none;
-        display: block; /* making it block level allows you to... */
-        margin: -8px auto 0; /* center automatically */
-    }
-    html,body{
-        max-width: 100%;
-    }
-}
+
+
+
 
 
 
@@ -203,7 +165,12 @@ h1{
 	padding: 100px 0px;
 	background-color: #191919;
     position: relative;
-    display: block;
+    text-align: center;
+    
+    display: flex;
+    align-items:center;
+	justify-content: center;
+
 }
 .about img{
 	height: auto;
@@ -211,13 +178,15 @@ h1{
 }
 .about-text{
 	width: 550px;
+    
 }
 .main2{
 	width:90%;
 	max-width: 95%;
 	margin: 0 auto;
-	display: flex;
-	align-items: center;
+    display: flex;
+	text-align: center;
+	align-items:center;
 	justify-content: space-around;
 }
 .about-text h2{
@@ -256,7 +225,7 @@ button:hover{
 	cursor: pointer;
 }
 .connect{
-    display: inline-block;
+    display: block;
     position: relative;
     width: 100%;
 	margin-top:8rem;
@@ -264,13 +233,12 @@ button:hover{
     
 }
 .container{
-    width: 90%;
 	max-width: 80%;
 	margin: 0 auto;
 	display: flex;
     align-items: center;
-	
-	justify-content: space-around;
+    
+	justify-content: center;
 
 }
 .connect-text{
@@ -287,7 +255,7 @@ button:hover{
 }
 .message{
     padding-top: 70px;
-    margin-left:13%;
+    
     display: inline-block;
     padding-bottom: 70px;
     /* position: relative;
@@ -311,7 +279,8 @@ input[type=text] {
     background:transparent;
     color:white;
   }
-  input[type=email] {
+  
+input[type=email] {
     border-radius: 30px;
     border: 1px solid grey;
     border-radius: 4px;
@@ -321,20 +290,21 @@ input[type=text] {
     padding: 15px 15px ;
     background:transparent;
     color:white;
-  }
+ }
   textarea {
     border-radius: 30px;
     border: 1px solid grey;
     border-radius: 4px;
     margin-bottom: 1%;
+    
     padding: 15px 15px ;
     background:transparent;
     color:white;
-  }
-  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+ }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 	color: #fcfc;
     opacity: 1; /* Firefox */
-  }
+}
 
   input[type=submit]{
     background-color:transparent;
@@ -354,27 +324,28 @@ input[type=text] {
   }
   
   .enquiry{
-    line-height: 70px;
+    line-height: 60px;
     border: white;
-    display: inline-block;
+    
     /* position: absolute;
     right:5%;
     bottom:40%; */
-    margin-right: 13%;
+    width: 80%;
+    
     margin-bottom: 6%;
-    margin-left: 5%;
+    margin-left: 10%;
   }
   .enquiry span{
     color:azure;
     color: white;
 	letter-spacing: 2px;
 	font-size: 25px;
-	margin-bottom: 25px;
+	margin-bottom:10px;
 	
   }
   .enmail{
     color: #fcfc;
-    font-size: 30px;
+    font-size: 1.3rem;
   }
 
 footer{
@@ -384,15 +355,17 @@ footer{
 	background-color: #191919;
     text-align: center;
   }
-  .foot{
+.foot{
     padding-top:1.5%;
     padding-bottom: 1.5%;
-  }
-  .foot img{
+  
+}
+  
+.foot img{
     height:25;
     width:25;
-    
-  }
+       
+}
 .text1{
     color:whitesmoke;
 }
@@ -400,8 +373,136 @@ p2{
     color: white;
     position: relative;
 }
+
 .footimg{
     position: relative;
     top:7px;
     padding-right: 2px;
+}
+
+@media (min-aspect-ratio:16/9){
+    .bg-vid{
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio:16/9){
+    .bg-vid{
+        width:auto;
+        height: 100%;
+    }
+}
+
+@media (max-width:1010px){
+    .name{
+        color: #f9004d;
+        font-size: 100px;
+    }
+    .main2{
+        flex-direction: column;
+    }
+    .about-text{
+        max-width: 80%;
+          
+    }
+    .about-text h2{
+        padding-top: 20px;
+    }
+    .container{
+        flex-direction: column;
+        max-width: 80%;
+        align-items: center;
+        text-align:center;
+        justify-content: center;
+    }
+    textarea{
+        width: 90%;
+    }
+    .enquiry{
+        width: 80%;
+        margin-left: 0;
+        display: flex;
+        position: relative;
+        right:9%;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        
+    }
+    .message{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+}
+
+@media(max-width:511px){
+    .name{
+        color:blue;
+        font-size: 60px;
+    }
+    .about img{
+        width:270px;
+        height: auto;
+    }
+    .main2{
+        flex-direction: column;
+    }
+    .about-text{
+        max-width: 80%;
+          
+    }
+    .about-text h2{
+        font-size:2.6em;
+        padding-top: 20px;
+    }
+    .container{
+        flex-direction: column;
+        max-width: 80%;
+        align-items: center;
+        
+        text-align:center;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        
+    }
+    textarea{
+        width: 90%;
+    }
+    .enquiry{
+        width: 90%;
+        margin-left: 2px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        line-height: 40px;
+        
+    }
+    
+    .message{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .connect h2{
+        font-size:2.6em ;
+    }
+    .about-text h5{
+        font-size:1.3em;
+    }
+    h3{
+        font-size: 1.5em;
+
+    }
+    .enquiry span{
+        font-size: 1.3em;
+
+    }
+    .enmail{
+        font-size: 0.8em;
+
+    }
+
+
 }
