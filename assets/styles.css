@@ -69,6 +69,7 @@ nav{
     
 
 }    
+
 .mylogo{
     width:80px;
     height:80px;
@@ -100,11 +101,11 @@ nav{
 
 
 .nameheader{
-    font-size: 8rem;   
+    font-size: 13rem;   
 }
 
 .name{
-    font-family:'quentin','Arizonia', cursive;
+    font-family:'Tangerine','quentin', sans-serif;
     font-size: 7rem;
 }
 .lastname{
@@ -114,16 +115,17 @@ nav{
     display: inline-block;
     text-align: center;
     position: relative;
-    top:14%;
-    right:5%;
+    top:8%;
+    right:8%;
     padding-left: 2%;
     padding-right: 2%;
     
 }
 .frontcontainer{
     width:100%;
-    height: 100vh;
+    height:100vh;
     display: block; 
+    position: relative;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -152,6 +154,10 @@ nav{
 #noob:hover{
     color:black;
 }
+.logos-mobile{
+    display: none;
+}
+
 
 
 
@@ -437,30 +443,74 @@ p2{
         width:auto;
         height: 100%;
     }
+    .frontcontainer{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content:left;
+        align-items: center
+        ;
+    }
+    nav{
+        
+        display: block;
+    }
+
     .logos{
         display: none;
     }
     .mylogo{
         position: absolute;
-        right: 8%;
-        top:0.8%;
+        
+        top:5px;
+        left:200%;
+        
+        
+        width:60px;
+        height:60px;
     }
     .main{
-        display: inline-block;
+        display: block;
+        
+        
         text-align: center;
-        position: relative;
-        top:30%;
-        right:7%;
-        padding-right: 5%;
-        padding-left: 2%;
+        max-width: 90%;
+        position: absolute;
+        
+        top:25%;
+        right: 35%;
+        padding-right: 0;
+        padding-left: 5%;
 
     }
     .name{
         color:whitesmoke;
-        font-size: 60px;
+        font-size: 80px;
+        
+        
+    }
+    .nameheader{
+        font-size: 11rem;
     }
     .lastname{
         padding-left: 30%;
+        padding-top: 10%;
+    }
+    .logos-mobile{
+        display: block;
+        position: absolute;
+        bottom: 5%;
+        
+        text-align: center;
+        justify-content:space-between;   
+    }
+    .links{
+        height:25;
+        width:25;
+        display:inline-block;
+        padding-left: 0;
+        
+        
     }
 
     .about{
@@ -486,7 +536,7 @@ p2{
     }
     .container{
         flex-direction: column;
-        max-width: 80%;
+        max-width: 85%;
         align-items: center;
         
         text-align:center;
@@ -499,7 +549,7 @@ p2{
     }
     .enquiry{
         width: 90%;
-        margin-left: 2px;
+        margin-left: 5px;
         display: flex;
         flex-direction: column;
         text-align: left;
@@ -531,6 +581,12 @@ p2{
         font-size: 0.8em;
 
     }
+    .foot{
+        font-size: 0.7em;
+    }
 
 
+}
+.space{
+    padding-left:40px;
 }
