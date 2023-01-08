@@ -156,10 +156,6 @@ nav{
 
 
 
-
-
-
-
 .about{
 	width: 100%;
 	padding: 100px 0px;
@@ -437,9 +433,38 @@ p2{
 }
 
 @media(max-width:511px){
+    .bg-vid{
+        width:auto;
+        height: 100%;
+    }
+    .logos{
+        display: none;
+    }
+    .mylogo{
+        position: absolute;
+        right: 8%;
+        top:0.8%;
+    }
+    .main{
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        top:30%;
+        right:5%;
+        padding-right: 5%;
+        padding-left: 2%;
+
+    }
     .name{
-        color:blue;
+        color:whitesmoke;
         font-size: 60px;
+    }
+    .lastname{
+        padding-left: 30%;
+    }
+
+    .about{
+        padding: 60px 0 ;
     }
     .about img{
         width:270px;
@@ -455,6 +480,9 @@ p2{
     .about-text h2{
         font-size:2.6em;
         padding-top: 20px;
+    }
+    .about-text p{
+        text-align: left;
     }
     .container{
         flex-direction: column;
