@@ -395,11 +395,24 @@ p2{
     }
 }
 
-@media (max-width:1010px){
+@media (max-width:1010px) and (min-width:512px){
     .name{
         color: #f9004d;
         font-size: 100px;
     }
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        
+        height: 85%;
+        width: 100%;
+        padding-left: 2%;
+        padding-right: 2%;
+        
+    }
+
     .main2{
         flex-direction: column;
     }
@@ -478,7 +491,7 @@ p2{
         position: absolute;
         
         top:25%;
-        right: 31%;
+        right: 32%;
         padding-right: 0;
         padding-left: 5%;
 
@@ -543,6 +556,9 @@ p2{
         padding-right: 1rem;
         padding-left: 1rem;
         
+    }
+    .form{
+        padding-top: 0.5rem;
     }
     textarea{
         width: 90%;
@@ -627,7 +643,7 @@ p2{
         position: absolute;
         
         top:25%;
-        right: 31%;
+        right: 32%;
         padding-right: 0;
         padding-left: 5%;
 
@@ -693,6 +709,10 @@ p2{
         padding-left: 1rem;
         
     }
+    .form{
+        padding-top: 0.5rem;
+    }
+
     textarea{
         width: 90%;
     }
