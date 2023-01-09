@@ -13,6 +13,7 @@ body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: block;
     position: relative;
+    background-color: black;
 }
 hr {
     /*border-color: white;*/
@@ -52,10 +53,6 @@ h1{
 .bg-vid{
     position: fixed;
     display: block;
-    
-    
-
-
 }
 
 nav{
