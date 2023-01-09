@@ -51,8 +51,8 @@ h1{
 
 .bg-vid{
     position: fixed;
-    display: flex;
-    z-index: -1;
+    display: block;
+    
     
 
 
