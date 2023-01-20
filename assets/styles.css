@@ -455,7 +455,7 @@ p2{
     }
     .frontcontainer{
         display: flex;
-        height: 95%;
+        height: 100%;
         position: relative;
         flex-direction: column;
         justify-content:left;
